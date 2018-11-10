@@ -1,0 +1,114 @@
+{
+  "bat": {
+    "image": "images/bat.png", 
+    "type": "slider"
+  }, 
+  "beetle": {
+    "image": "images/beetle.png", 
+    "type": "slider"
+  }, 
+  "blue": {
+    "image": "images/blue_start.png", 
+    "type": "static"
+  }, 
+  "book": {
+    "image": "images/book.png", 
+    "type": "static"
+  }, 
+  "candlestick": {
+    "image": "images/candlestick.png", 
+    "type": "static"
+  }, 
+  "chest": {
+    "image": "images/chest.png", 
+    "type": "static"
+  }, 
+  "coins": {
+    "image": "images/coins.png", 
+    "type": "static"
+  }, 
+  "crown": {
+    "image": "images/crown.png", 
+    "type": "static"
+  }, 
+  "djinn": {
+    "image": "images/djinn.png", 
+    "type": "slider"
+  }, 
+  "dragon": {
+    "image": "images/dragon.png", 
+    "type": "slider"
+  }, 
+  "ghost": {
+    "image": "images/ghost.png", 
+    "type": "slider"
+  }, 
+  "green": {
+    "image": "images/green_start.png", 
+    "type": "static"
+  }, 
+  "helmet": {
+    "image": "images/helmet.png", 
+    "type": "static"
+  }, 
+  "jewel": {
+    "image": "images/jewel.png", 
+    "type": "static"
+  }, 
+  "keys": {
+    "image": "images/keys.png", 
+    "type": "static"
+  }, 
+  "lizard": {
+    "image": "images/lizard.png", 
+    "type": "slider"
+  }, 
+  "map": {
+    "image": "images/map.png", 
+    "type": "static"
+  }, 
+  "moth": {
+    "image": "images/moth.png", 
+    "type": "slider"
+  }, 
+  "mouse": {
+    "image": "images/mouse.png", 
+    "type": "slider"
+  }, 
+  "owl": {
+    "image": "images/owl.png", 
+    "type": "slider"
+  }, 
+  "princess": {
+    "image": "images/princess.png", 
+    "type": "slider"
+  }, 
+  "red": {
+    "image": "images/red_start.png", 
+    "type": "static"
+  }, 
+  "ring": {
+    "image": "images/ring.png", 
+    "type": "static"
+  }, 
+  "skull": {
+    "image": "images/skull.png", 
+    "type": "static"
+  }, 
+  "spider": {
+    "image": "images/spider.png", 
+    "type": "slider"
+  }, 
+  "sword": {
+    "image": "images/sword.png", 
+    "type": "static"
+  }, 
+  "troll": {
+    "image": "images/troll.png", 
+    "type": "slider"
+  }, 
+  "yellow": {
+    "image": "images/yellow_start.png", 
+    "type": "static"
+  }
+}
