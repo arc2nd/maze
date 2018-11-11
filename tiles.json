@@ -7,28 +7,60 @@
     "image": "images/beetle.png", 
     "type": "slider"
   }, 
+  "blank_ninety": {
+    "image": "images/blank_ninety.png", 
+    "type": "slider"
+  }, 
+  "blank_straight": {
+    "image": "images/blank_straight.png", 
+    "type": "slider"
+  }, 
   "blue": {
     "image": "images/blue_start.png", 
+    "square": [
+      6, 
+      6
+    ], 
     "type": "static"
   }, 
   "book": {
     "image": "images/book.png", 
+    "square": [
+      2, 
+      0
+    ], 
     "type": "static"
   }, 
   "candlestick": {
     "image": "images/candlestick.png", 
+    "square": [
+      2, 
+      6
+    ], 
     "type": "static"
   }, 
   "chest": {
     "image": "images/chest.png", 
+    "square": [
+      2, 
+      4
+    ], 
     "type": "static"
   }, 
   "coins": {
     "image": "images/coins.png", 
+    "square": [
+      4, 
+      0
+    ], 
     "type": "static"
   }, 
   "crown": {
     "image": "images/crown.png", 
+    "square": [
+      2, 
+      2
+    ], 
     "type": "static"
   }, 
   "djinn": {
@@ -45,18 +77,34 @@
   }, 
   "green": {
     "image": "images/green_start.png", 
+    "square": [
+      0, 
+      6
+    ], 
     "type": "static"
   }, 
   "helmet": {
     "image": "images/helmet.png", 
+    "square": [
+      4, 
+      6
+    ], 
     "type": "static"
   }, 
   "jewel": {
     "image": "images/jewel.png", 
+    "square": [
+      4, 
+      4
+    ], 
     "type": "static"
   }, 
   "keys": {
     "image": "images/keys.png", 
+    "square": [
+      4, 
+      2
+    ], 
     "type": "static"
   }, 
   "lizard": {
@@ -65,6 +113,10 @@
   }, 
   "map": {
     "image": "images/map.png", 
+    "square": [
+      0, 
+      2
+    ], 
     "type": "static"
   }, 
   "moth": {
@@ -85,14 +137,26 @@
   }, 
   "red": {
     "image": "images/red_start.png", 
+    "square": [
+      0, 
+      0
+    ], 
     "type": "static"
   }, 
   "ring": {
     "image": "images/ring.png", 
+    "square": [
+      0, 
+      4
+    ], 
     "type": "static"
   }, 
   "skull": {
     "image": "images/skull.png", 
+    "square": [
+      6, 
+      2
+    ], 
     "type": "static"
   }, 
   "spider": {
@@ -101,6 +165,10 @@
   }, 
   "sword": {
     "image": "images/sword.png", 
+    "square": [
+      6, 
+      4
+    ], 
     "type": "static"
   }, 
   "troll": {
@@ -109,6 +177,10 @@
   }, 
   "yellow": {
     "image": "images/yellow_start.png", 
+    "square": [
+      6, 
+      0
+    ], 
     "type": "static"
   }
 }

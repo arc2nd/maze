@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import copy
+
 import pygame
 
 # possible icons:
@@ -44,12 +46,19 @@ BLUE   = (  0,   0, 255)
 YELLOW = (255, 255,   0)
 
 class MazeTile(pygame.sprite.Sprite):
-    def __init__(self, name, image_path):
+    def __init__(self, name, image_path, t_type=None, posX=0, posY=0):
         super(MazeTile, self).__init__()
         self.name = name
         self.image = pygame.image.load(image_path).convert()
+        self.orig_image = copy.copy(self.image)
         self.image.set_colorkey(WHITE)  # set white as transparent
         self.rect = self.image.get_rect()
+        self.size = self.image.get_size()
+        self.type = t_type
+        self.square = [posX, posY]
+
+    def scale(self, factorX, factorY):
+        self.image = pygame.transform.scale(self.orig_image, (int(self.size[0]*factorX), int(self.size[1]*factorY)))
 
     def move_left(self):
         for i in range(self.rect.w):
