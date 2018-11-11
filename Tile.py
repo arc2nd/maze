@@ -66,7 +66,7 @@ class MazeTile(pygame.sprite.Sprite):
         self.rotation += angle
         if self.rotation >= 271 or self.rotation <=-271:
             self.rotation = 0
-        print(self.rotation)
+        # print(self.rotation)
 
     def move_left(self):
         for i in range(self.rect.w):

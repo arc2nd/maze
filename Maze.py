@@ -61,8 +61,8 @@ class Maze(object):
     def place_statics(self, board, tile_list, tileW):
         for t in tile_list:
             if t.type == 'static':
-                t.rect.x = t.square[0] * tileW
-                t.rect.y = t.square[1] * tileW
+                t.rect.x = (t.square[0] * tileW) + tileW
+                t.rect.y = (t.square[1] * tileW) + tileW
                 board.array[t.square[0] + (t.square[1]*7)] = t
 
     def place_dyns(self, board, tile_list, tileW):
@@ -71,18 +71,18 @@ class Maze(object):
             if t.type != 'static':
                 spotX, spotY = board.find_free()
                 # print('I: {} X: {} Y: {}'.format(i, spotX, spotY))
-                if spotX:
-                    t.rect.x = spotX * tileW
-                if spotY:
-                    t.rect.y = spotY * tileW
+                if spotX or spotY:
+                    t.rect.x = (spotX * tileW) + tileW
+                #if spotY:
+                    t.rect.y = (spotY * tileW) + tileW
                 if spotX >= 0 and spotY >= 0:
                     # print(spotX + (spotY*7))
                     board.array[spotX + (spotY*7)] = t
                 # if isinstance(spotX, types.NoneType) or isinstance(spotY, types.NoneType):
                 if i == 49:
-                    t.rect.x = 8 * tileW
-                    t.rect.y = 0 * tileW
-                    print('X: {}, Y: {}'.format(t.rect.x, t.rect.y))
+                    t.rect.x = (8 * tileW) + tileW
+                    t.rect.y = (0 * tileW) + tileW
+                    # print('X: {}, Y: {}'.format(t.rect.x, t.rect.y))
                     board.array[-1] = t
             i+=1
 
@@ -128,7 +128,7 @@ class Maze(object):
 
         # build board and screen and lists of things we can affect
         board = Board.MazeBoard(lenX=7, lenY=7)
-        tile_list, sprite_list, screen = self.setup(screenW + int(2*tileW), screenW + int(1*tileW))
+        tile_list, sprite_list, screen = self.setup(screenW + int(3*tileW), screenW + int(2*tileW))
         self.scale_all(tile_list, scale, scale)
 
         # place tiles
