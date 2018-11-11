@@ -35,8 +35,8 @@ tiles_dict = {'red': {'image': 'images/red_start.png', 'type': 'static', 'square
               'djinn': {'image': 'images/djinn.png', 'type': 'slider'}, 
               'dragon': {'image': 'images/dragon.png', 'type': 'slider'}, 
               'bat': {'image': 'images/bat.png', 'type': 'slider'},
-              'blank_ninety': {'image': 'images/blank_ninety.png', 'type': 'slider'}, 
-              'blank_straight': {'image': 'images/blank_straight.png', 'type': 'slider'}
+              # 'blank_ninety': {'image': 'images/blank_ninety.png', 'type': 'slider'}, 
+              # 'blank_straight': {'image': 'images/blank_straight.png', 'type': 'slider'}
              }
 
 if __name__ == '__main__':

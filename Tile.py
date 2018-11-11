@@ -56,9 +56,18 @@ class MazeTile(pygame.sprite.Sprite):
         self.size = self.image.get_size()
         self.type = t_type
         self.square = [posX, posY]
+        self.rotation = 0
 
     def scale(self, factorX, factorY):
         self.image = pygame.transform.scale(self.orig_image, (int(self.size[0]*factorX), int(self.size[1]*factorY)))
+
+    def rotate(self, angle):
+        if angle > 270:
+            angle = 0
+        if angle < -270:
+            angle = 0
+        self.image = pygame.transform.rotate(self.image, angle)
+        self.rotation = angle
 
     def move_left(self):
         for i in range(self.rect.w):

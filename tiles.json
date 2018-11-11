@@ -7,14 +7,6 @@
     "image": "images/beetle.png", 
     "type": "slider"
   }, 
-  "blank_ninety": {
-    "image": "images/blank_ninety.png", 
-    "type": "slider"
-  }, 
-  "blank_straight": {
-    "image": "images/blank_straight.png", 
-    "type": "slider"
-  }, 
   "blue": {
     "image": "images/blue_start.png", 
     "square": [
