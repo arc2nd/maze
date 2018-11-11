@@ -25,6 +25,7 @@ PLAYERS_DICT = {'red': {'image': 'red.png'},
 
 class Maze(object):
     def __init__(self):
+        # self.main(500)
         return
 
     def get_tiles(self):
@@ -77,9 +78,11 @@ class Maze(object):
                 if spotX >= 0 and spotY >= 0:
                     # print(spotX + (spotY*7))
                     board.array[spotX + (spotY*7)] = t
-                if isinstance(spotX, types.NoneType) or isinstance(spotY, types.NoneType):
+                # if isinstance(spotX, types.NoneType) or isinstance(spotY, types.NoneType):
+                if i == 49:
                     t.rect.x = 8 * tileW
-                    t.rect.y = 2 * tileW
+                    t.rect.y = 0 * tileW
+                    print('X: {}, Y: {}'.format(t.rect.x, t.rect.y))
                     board.array[-1] = t
             i+=1
 
